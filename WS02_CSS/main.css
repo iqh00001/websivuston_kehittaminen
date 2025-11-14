@@ -63,3 +63,60 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+.transition-button {
+  background-color: lightblue;   
+  padding: 10px 20px;           
+  border: none;                  
+  cursor: pointer;               
+  transition: background-color 0.3s ease; 
+}
+
+.transition-button:hover {
+  background-color: lightcoral;  
+}
+.animation-box {
+  width: 50px;                  
+  height: 50px;                    
+  background-color: lightgreen;    
+  position: relative;              
+  animation: move 2s infinite alternate; 
+}
+
+@keyframes move {
+  from {
+    left: 0;                       
+  }
+  to {
+    left: 100px;                    
+  }
+}
+.pseudo-list li:nth-child(odd) {
+  background-color: lightgray; 
+}
+
+.pseudo-list li:nth-child(even) {
+  background-color: white;     
+}
+.filter-image {
+  filter: grayscale(100%);           
+  transition: filter 0.3s ease;      
+}
+
+.filter-image:hover {
+  filter: grayscale(0%);             
+}
+.quote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+.quote::before {
+  content: '“';
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: lightgray;
+  line-height: 1;
+}
