@@ -1,11 +1,11 @@
 body {
   font-family: monospace;
-  background-color: lightgray;
+  background-color: rgb(251, 220, 251);
   color: black;
 }
 
 p {
-  color: blue;
+  color: rgb(143, 208, 255);
 }
 
 h1 {
@@ -54,7 +54,7 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #adfad1;
   color: white;
   padding: 10px;
   border: none;
@@ -63,7 +63,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #faff93;
 }
 .transition-button {
   background-color: lightblue;
@@ -160,9 +160,25 @@ input[type="submit"]:hover {
     background-color: lightseagreen;
   }
 }
-        .list {
-            font-weight: bold;
-        }
-        h1 {
-            color: green;
-        }
+.list {
+  font-weight: bold;
+}
+h1 {
+  color: green;
+}
+.responsive-box {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .responsive-box {
+        background-color: lightcoral;
+    }
+}
+
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: lightseagreen;
+    }
+}
