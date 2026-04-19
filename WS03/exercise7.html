@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 7</title>
+</head>
+<body>
+
+<button id="btn">Click me</button>
+
+<script>
+let btn = document.getElementById("btn");
+
+function handleClick() {
+    alert("Compatible!");
+}
+
+// Tarkistetaan kumpi toimii
+if (window.addEventListener) {
+    btn.addEventListener("click", handleClick);
+} else if (window.attachEvent) {
+    btn.attachEvent("onclick", handleClick);
+}
+</script>
+
+</body>
+</html>
